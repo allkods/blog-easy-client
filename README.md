@@ -1,5 +1,5 @@
 # blog-easy-client
-blog-easy-client is a javascript client library for [bog-easy](https://github.com/allkods/blog-easy) which enables us to integrates a full automated blog system to a website without having to write any code. 
+blog-easy-client is a javascript client library for [blog-easy](https://github.com/allkods/blog-easy) which enables us to integrates a full automated blog system to a website without having to write any code. 
 It consists of :
 
 >A javascript client library for the browser (this repository)
