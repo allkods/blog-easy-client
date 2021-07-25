@@ -94,6 +94,7 @@ blogEasy({
       }
     })
 ```
+> For styling all the text of code, Select all the child element with a `*`, Example : `your_class *{}`
 
 
 
@@ -174,3 +175,4 @@ blogEasy({
 
 - Automatic compression of images
 - Converting the cover image into 2 qualities ( preview and original, to decrease the load time of view while viewing multiple post at a time )
+- Tag adding feature
