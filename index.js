@@ -1579,6 +1579,9 @@ function insertElementToList(){
 function createInput(node){
 
 if(!LastNode || node.id !== LastNode.id){
+    if(node.tagName === 'PRE')
+    Dvalue=node.getElementsByTagName('code')[0].innerHTML;
+    else
     Dvalue=node.innerHTML;
 }
 LastNode = node;
