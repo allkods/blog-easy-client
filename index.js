@@ -1599,6 +1599,10 @@ inp.oninput = function(e){
         Input.value= Input.value.substring(0,Input.value.length-1);
         return;
     }
+    if(e.data === null && Selected.tagName === 'H1'){
+        Input.value= Input.value.substring(0,Input.value.length-1);
+        return;
+    }
 
     e.data === " " ? InpSpace=true : InpSpace=false
     
@@ -1639,7 +1643,7 @@ function styleInput(){
 //For converting text element to textarea
 function textToInput(){
     // var node=Array.prototype.indexOf.call(Nodes, Selected);
-        // if(node !== -1) models[i].keys.splice(node,1);
+    // if(node !== -1) models[i].keys.splice(node,1);
 
     var node=getNode();
     var str="";
@@ -1668,6 +1672,7 @@ function textToInput(){
                     continue;
                 }else{
                     arr += str[i][j];
+                    space = false;
                 }
                 str[i][j] === " " ? space=true : space=false
                 
@@ -1675,6 +1680,11 @@ function textToInput(){
 
             if( i !== str.length-1)
             arr += '\n';
+    }
+    if(Selected.tagName === 'PRE'){
+        arr = arr.replace(/&lt;/g,'<')
+                 .replace(/&gt;/g,'>')
+                 .replace(/&#92;n/g,'\\n');
     }
     Input.value = arr;
 
@@ -1709,21 +1719,29 @@ function InputToText(){
         
         for(var i=start; i<=lst; i++){
             if(val[i] === '\n'){
+                if(Selected.tagName !== 'PRE')
                 str += '<br>';
+                else
+                str += val[i];
             }else{
                 if(space && val[i] === " " && Selected.tagName !== 'PRE'){
                     continue;
                 }else{
                     str += val[i];
+                    space = false;
                 }
                 val[i] === " " ? space=true : space=false
                 
             }
         }
+        if(Selected.tagName === 'PRE'){
+            str = str.replace(/</g,'&lt;')
+                     .replace(/>/g,'&gt;')
+                     .replace(/\\n/g,'&#92;n');
+        }
         Selected.tagName === 'LI' ?
         Nodes[node.i].list[node.j].value = str :
         Nodes[node.i].html = str;
-    
 
     }
     render();
