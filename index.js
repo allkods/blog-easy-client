@@ -1593,22 +1593,23 @@ styleInput();
 node.parentNode.replaceChild(inp,node);
 inp.focus();
 
+inp.onkeydown = function(e){
+    if(e.key === 'Enter' && Selected.tagName === 'H1'){
+       e.preventDefault();
+   }
+}
+
 inp.oninput = function(e){
-    inp.style.height = '';
-    inp.style.height = inp.scrollHeight + "px";
+   inp.style.height = '';
+   inp.style.height = inp.scrollHeight + "px";
 
+   if(InpSpace && e.data === " " && Selected.tagName !== 'PRE'){
+       Input.value= Input.value.substring(0,Input.value.length-1);
+       return;
+   }
 
-    if(InpSpace && e.data === " " && Selected.tagName !== 'PRE'){
-        Input.value= Input.value.substring(0,Input.value.length-1);
-        return;
-    }
-    if(e.data === null && Selected.tagName === 'H1'){
-        Input.value= Input.value.substring(0,Input.value.length-1);
-        return;
-    }
-
-    e.data === " " ? InpSpace=true : InpSpace=false
-    
+   e.data === " " ? InpSpace=true : InpSpace=false
+   
 }
 
 inp.onblur = function(){
@@ -1616,6 +1617,7 @@ inp.onblur = function(){
     LastScroll = getScroll();
     InputToText();
     destroyInput();
+    InpSpace = false;
 }
 
 };
