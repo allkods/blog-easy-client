@@ -21,6 +21,7 @@ It consists of :
 ## Screen Shots
 ---
 ![Preview 1](https://allkods.in/img/p1.jpg)![Preview 1](https://allkods.in/img/p2.jpg)![Preview 1](https://allkods.in/img/p3.jpg)![Preview 1](https://allkods.in/img/p4.jpg)
+---
 ## Installation
 ---
 ```javascript
