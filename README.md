@@ -18,6 +18,9 @@ It consists of :
 - It enables to choose a databse either mongoDB or mysql to store blog data
 - It creates search engine friendly content
 
+## Screen Shots
+---
+![Preview 1](https://allkods.in/img/p1.jpg)![Preview 1](https://allkods.in/img/p2.jpg)![Preview 1](https://allkods.in/img/p3.jpg)![Preview 1](https://allkods.in/img/p4.jpg)
 ## Installation
 ---
 ```javascript
@@ -98,81 +101,16 @@ blogEasy({
 
 
 
-## How to use variables which are automatically passed to the views by [blog-easy](https://github.com/allkods/blog-easy)
+## How to use variables which are automatically passed to the views by [blog-essy](https://github.com/allkods/blog-easy)
 ---
+Read documentation here -> [setting up views](https://allkods.in/projects/blog-easy)
 
-### Inside the view of getting all Blog Post
-
-- How to create search bar
-```html
-<form action="/blog" method="GET">
-    <input name= "search" type="search" value="<%= search %>" placeholder="your search query here....">
-    <button>Search</button>
-</form>
-```
-`The route for the action will be same as getting all blog post route`
-- How to create next button
-```html
-<% if(next) {%>
-    <a href="/blog?page=<%= page+1 %>&search=<%= search %>">Next</a>
-<% } %>
-```
-- How to create back button
-```html
-<% if(back) {%>
-    <a href="/blog?page=<%= page-1 %>&search=<%= search %>">Back</a>
-<% } %>
-```
-
-- How to render all posts
-```html
-<% posts.forEach(post =>{ %>
-                                
-    <a href="/blog/<%= post.slug %>">
-        <div>
-            <p><%= post.title %></p>
-
-            <div style="
-            background:url('<%= post.coverImage %>');
-            background-size: cover;">
-            </div>
-
-            <p><%- readableDate %></p>
-
-        </div>
-    </a>
-
-<% }) %>
-```
-
-### Inside the view of getting Single blog post
-- How to render post
-```html
-<div><%- blogHtml %></div>
-```
-
-> You can use `<%= blogTitle %> `and `<%= blogImageSrc %>` in their meta tags for creating search engine friendly content
-
-- How to create edit button
-```html
-<a href="/blog/<%= slug %>/edit">
-    <button>Edit</button>
-</a>
-```
-> You can implement your own logic for showing button only if user is logged in or is admin
-
-- How to create delete button
-```html
-<form action="/post-delete" method="POST">
-    <input type="hidden" name="slug" value="<%= slug %>">
-    <button>Delete</button>
-</form>
-```
-> You can implement your own logic for showing button only if user is logged in or is admin
-
+## Missing feature
+---
+- For adding links we have to use dafault html `<a>` tag ( we will be providing link adding feature soon. )
 ## TO-DO
 ---
-
+- Link adding feature
 - Automatic compression of images
 - Converting the cover image into 2 qualities ( preview and original, to decrease the load time of view while viewing multiple post at a time )
 - Tag adding feature
