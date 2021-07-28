@@ -103,7 +103,6 @@ blogEasy({
 
 
 ## How to set up its Automated backends
----
 Read full documentation here -> [blog-essy](https://github.com/allkods/blog-easy)
 
 ## How to use variables which are automatically passed to the views
