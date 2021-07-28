@@ -20,7 +20,7 @@ It consists of :
 
 ## Screen Shots
 ---
-![Preview 1](https://allkods.in/img/p1.jpg)![Preview 1](https://allkods.in/img/p2.jpg)![Preview 1](https://allkods.in/img/p3.jpg)![Preview 1](https://allkods.in/img/p4.jpg)
+![Preview 1](https://allkods.in/img/prevvv1.jpg)![Preview 1](https://allkods.in/img/prev2.jpg)![Preview 1](https://allkods.in/img/prev3.jpg)![Preview 1](https://allkods.in/img/prev4.jpg)
 ---
 ## Installation
 ---
@@ -102,9 +102,12 @@ blogEasy({
 
 
 
-## How to use variables which are automatically passed to the views by [blog-essy](https://github.com/allkods/blog-easy)
+## How to set up its Automated backends
 ---
-Read documentation here -> [setting up views](https://allkods.in/projects/blog-easy)
+Read full documentation here -> [blog-essy](https://github.com/allkods/blog-easy)
+
+## How to use variables which are automatically passed to the views
+Read full documentation here -> [setting up views](https://allkods.in/projects/blog-easy)
 
 ## Missing feature
 ---
