@@ -103,7 +103,7 @@ blogEasy({
 
 
 ## How to set up its Automated backends
-Read full documentation here -> [blog-essy](https://github.com/allkods/blog-easy)
+Read full documentation here -> [blog-easy](https://github.com/allkods/blog-easy)
 
 
 ## Missing feature
