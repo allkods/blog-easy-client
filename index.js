@@ -1533,17 +1533,17 @@ function addElemOnLoad(){
             case 'BEimgbox' :
                 var tname = node.classList[0] == 'BEcoverimage' ? 'coverImage' : 'imageBox';
                 if(tname === 'coverImage') Coverimage = true;
-                var url= node.style.background.split("url")[1].split(" ")[0].slice(3,-2);
-
-                Nodes.push({
-                    id:setId(),
-                    tag:'div',
-                    type:tname,
-                    file : null,
-                    data: '/'+url,
-                    class: node.getAttribute('class'),
-                    style: styleToCamel(node.getAttribute('style'))
-                });
+                var url= node.style.background.split("url")[1].split(" ")[0].slice(2,-2);
+                
+                    Nodes.push({
+                        id:setId(),
+                        tag:'div',
+                        type:tname,
+                        file : null,
+                        data: url,
+                        class: node.getAttribute('class'),
+                        style: styleToCamel(node.getAttribute('style'))
+                    });
             break;           
                 
         }
