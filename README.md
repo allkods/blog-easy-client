@@ -1,5 +1,5 @@
 # blog-easy-client
-blog-easy-client is a javascript client library for [blog-easy](https://github.com/allkods/blog-easy) which enables us to integrates a full automated blog system to a website without having to write any code. 
+blog-easy-client is a javascript client library for [blog-easy](https://github.com/allkods/blog-easy#readme) which enables us to integrates a full automated blog system to a website without having to write any code. 
 It consists of :
 
 >A javascript client library for the browser (this repository)
@@ -10,7 +10,7 @@ It consists of :
 - It provides a default styling for all the blog elements
 - It enables us to customize the styling of all the elements
 
->A [Node.js package](https://github.com/allkods/blog-easy) (for server)
+>A [Node.js package](https://github.com/allkods/blog-easy#readme) (for server)
 ### Features
 ---
 - It can automatically upload, update the post sent by its javascript cms client library
@@ -103,7 +103,7 @@ blogEasy({
 
 
 ## How to set up its Automated backends
-Read full documentation here -> [blog-easy](https://github.com/allkods/blog-easy)
+Read full documentation here -> [blog-easy](https://github.com/allkods/blog-easy#readme)
 
 
 ## Missing feature
@@ -115,3 +115,4 @@ Read full documentation here -> [blog-easy](https://github.com/allkods/blog-easy
 - Automatic compression of images
 - Converting the cover image into 2 qualities ( preview and original, to decrease the load time of view while viewing multiple post at a time )
 - Tag adding feature
+- Social sites share button
