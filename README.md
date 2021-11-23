@@ -34,7 +34,7 @@ Once you have installed the blog-easy-client library, you can now init the clien
 >Using CDN
 
 ```javascript
-<script src="https://cdn.allkods.in/blog-easy-client-1.0.6.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cdn-allkods@1.2.0/blog-easy-client-1.2.0.min.js"></script>
 ```
 
 >using NPM
