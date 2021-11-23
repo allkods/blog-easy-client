@@ -114,5 +114,4 @@ Read full documentation here -> [blog-easy](https://github.com/allkods/blog-easy
 - Link adding feature
 - Automatic compression of images
 - Converting the cover image into 2 qualities ( preview and original, to decrease the load time of view while viewing multiple post at a time )
-- Tag adding feature
 - Social sites share button

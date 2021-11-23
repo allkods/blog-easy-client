@@ -1,6 +1,6 @@
 {
   "name": "blog-easy-client",
-  "version": "1.0.3",
+  "version": "1.2.0",
   "description": "A javascript client library for blog-easy which integrates a fully automated blog CMS (content management system) which makes it easy to create and publish blog post",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,8 @@
     "javascript",
     "blog",
     "cms",
-    "library"
+    "library",
+    "automation"
   ],
   "author": "sahil raj",
   "license": "ISC"
