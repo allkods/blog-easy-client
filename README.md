@@ -20,7 +20,10 @@ It consists of :
 
 ## Screen Shots
 ---
-![Preview 1](https://allkods.in/img/prevvv1.jpg)![Preview 1](https://allkods.in/img/prev2.jpg)![Preview 1](https://allkods.in/img/prev3.jpg)![Preview 1](https://allkods.in/img/prev4.jpg)
+![Preview 1](https://user-images.githubusercontent.com/86558781/193528252-1c3060a7-be38-47be-bdde-abd9a909382c.png)
+![Preview 2](https://user-images.githubusercontent.com/86558781/193528261-d5aa4653-811b-4f69-84fb-ab8caf52bb85.png)
+![Preview 1](https://user-images.githubusercontent.com/86558781/193528275-ed31fc10-3f3a-4c7e-9a04-f7472a66ac64.png)
+![Preview 1](https://user-images.githubusercontent.com/86558781/193528290-de8c6709-af58-477e-aa19-b28aa8afc0dc.png)
 ---
 ## Installation
 ---
